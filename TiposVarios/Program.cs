@@ -31,7 +31,14 @@ namespace TiposVarios
 
         #region CHAR vars
 
-        
+        private static char heartsymbol = '\u2665';
+        private static char musicnotesymbol = '\u266a';
+
+        static void PrintChars()
+        {
+            Console.WriteLine(heartsymbol);
+            Console.WriteLine(musicnotesymbol);
+        }
 
         #endregion
 
@@ -41,6 +48,7 @@ namespace TiposVarios
             PrintINT();
             Console.WriteLine("/n");
             Console.WriteLine("Character type variables:");
+            PrintChars();
         }
     }
 }
