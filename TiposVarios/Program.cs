@@ -42,6 +42,19 @@ namespace TiposVarios
 
         #endregion
 
+        #region REAL vars
+
+        private static float floattie = 4.565f;
+        private static double doublie = 5.67677;
+
+        static void PrintRealNos()
+        {
+            Console.WriteLine(floattie);
+            Console.WriteLine(doublie);
+        }
+
+        #endregion
+
         static void Main()
         {
             Console.WriteLine("Integral type variables:");
@@ -49,6 +62,8 @@ namespace TiposVarios
             Console.WriteLine("/n");
             Console.WriteLine("Character type variables:");
             PrintChars();
+            Console.WriteLine("/n");
+            PrintRealNos();
         }
     }
 }
