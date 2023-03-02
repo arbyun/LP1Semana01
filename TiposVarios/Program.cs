@@ -9,10 +9,10 @@ namespace TiposVarios
         private static sbyte verysmall = -4;
         private static short smallish = -3006;
         private static int regular = -767675;
-        private static long big = -7867857;
+        private static long big = -7867857L;
         private static ushort smaller = 5435;
-        private static uint regularer = 435245;
-        private static ulong bigger = 534523654;
+        private static uint regularer = 435245U;
+        private static ulong bigger = 534523654UL;
         private static sbyte ultrasmall = 1;
 
         static void PrintINT()
@@ -29,10 +29,18 @@ namespace TiposVarios
 
         #endregion
 
+        #region CHAR vars
+
+        
+
+        #endregion
+
         static void Main()
         {
             Console.WriteLine("Integral type variables:");
             PrintINT();
+            Console.WriteLine("/n");
+            Console.WriteLine("Character type variables:");
         }
     }
 }
