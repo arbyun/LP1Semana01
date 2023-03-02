@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace TiposVarios
 {
@@ -55,6 +56,19 @@ namespace TiposVarios
 
         #endregion
 
+        #region BOOL vars
+
+        private static bool amiright = true;
+        private static bool amiwrong = false;
+
+        static void PrintBools()
+        {
+            Console.WriteLine(amiright);
+            Console.WriteLine(amiwrong);
+        }
+
+        #endregion
+
         static void Main()
         {
             Console.WriteLine("Integral type variables:");
@@ -63,7 +77,11 @@ namespace TiposVarios
             Console.WriteLine("Character type variables:");
             PrintChars();
             Console.WriteLine("/n");
+            Console.WriteLine("Real number type variables:");
             PrintRealNos();
+            Console.WriteLine("/n");
+            Console.WriteLine("Bool type variables:");
+            PrintBools();
         }
     }
 }
