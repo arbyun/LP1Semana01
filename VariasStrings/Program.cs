@@ -15,6 +15,9 @@ namespace VariasStrings
         
         static void Main(string[] args)
         {
+            double xx = 0.12345;
+            int ii = 18;
+            
             Console.WriteLine(firststr);
             Console.WriteLine(secondstr);
             Console.WriteLine(thirdstr);
@@ -23,6 +26,11 @@ namespace VariasStrings
             Console.WriteLine(interstr);
             Console.WriteLine(idkstr);
             Console.WriteLine(@"My concatenate string is '{0}'", concstr);
+            
+            Console.WriteLine("xx's first print: {0:0.00}", xx);
+            Console.WriteLine("xx's second print: {0:P1}", xx);
+            Console.WriteLine("ii's first print: 0x{0:X}", ii);
+            Console.WriteLine("ii's second print: {0:C}", ii);
         }
     }
 }
